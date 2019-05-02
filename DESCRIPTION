@@ -1,6 +1,6 @@
 Package: maEndToEnd
 Title: An end to end workflow for differential gene expression using Affymetrix microarrays
-Version: 2.4.0
+Version: 2.5.0
 Date: 2018-09-14
 Authors@R: c(person(role=c("aut", "cre"), "Bernd", "Klaus", email = "bernd.klaus@embl.de"),
              person(role="aut", "Stefanie", "Reisenauer", email = "steffi.reisenauer@tum.de"))
