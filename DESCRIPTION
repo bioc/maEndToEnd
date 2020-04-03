@@ -1,6 +1,6 @@
 Package: maEndToEnd
 Title: An end to end workflow for differential gene expression using Affymetrix microarrays
-Version: 2.7.1
+Version: 2.7.2
 Date: 2018-09-14
 Authors@R: c(person(role=c("aut", "cre"), "Bernd", "Klaus", email = "bernd.klaus@embl.de"),
              person(role="aut", "Stefanie", "Reisenauer", email = "steffi.reisenauer@tum.de"))
@@ -41,4 +41,3 @@ biocViews: GeneExpressionWorkflow
 NeedsCompilation: no
 URL: https://www.bioconductor.org/help/workflows/
 Workflow: True
-PackageStatus: Deprecated
