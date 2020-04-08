@@ -1888,8 +1888,8 @@ the GO hierarchy.
 
 
 ```{r graphOfResults, fig.height = 6, eval=TRUE, results='hide', dpi=600, fig.cap="Significantly enriched GO nodes in the GO hierarchy"}
-showSigOfNodes(top_GO_data, score(result_top_GO_elim), firstSigNodes = 3,
-               useInfo = 'def')
+# showSigOfNodes(top_GO_data, score(result_top_GO_elim), firstSigNodes = 3,
+#                useInfo = 'def')
 ```
 
 We can see that indeed GO categories related to inflammation, signalling and 
