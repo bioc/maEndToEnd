@@ -1886,6 +1886,7 @@ A graph of the results can also be produced. Here we visualize the three most
 significant nodes according to the Fisher elim algorithm in the context of
 the GO hierarchy.
 
+Note that the following code is hashed out so that it won't be executed on the Bioconductor build, since it caused the build to fail. However, it can be run on a local machine without concerns.
 
 ```{r graphOfResults, fig.height = 6, eval=TRUE, results='hide', dpi=600, fig.cap="Significantly enriched GO nodes in the GO hierarchy"}
 # showSigOfNodes(top_GO_data, score(result_top_GO_elim), firstSigNodes = 3,
