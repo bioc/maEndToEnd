@@ -204,6 +204,7 @@ not strictly neccesary to execute the workflow.
     library(geneplotter)
     library(RColorBrewer)
     library(pheatmap)
+    library(enrichplot)
      
 #Formatting/documentation packages
    #library(rmarkdown)
@@ -1960,6 +1961,7 @@ edge-thickness (that is the line connecting two pathways) is proportional
 to the number of overlapping genes between two pathways.
 
 ```{r emapplot, dependson="runReactomeEnrichment", fig.width=6, fig.height = 7, fig.cap="Enriched Reactome pathways enrichment results as a graph."}
+reactome_enrich <- pairwise_termsim(reactome_enrich)
 emapplot(reactome_enrich, showCategory = 10)
 ```
 
