@@ -80,7 +80,7 @@ any(grepl("f1000", rmarkdown::all_output_formats(knitr::current_input())))
 ```{r knitrOptions, include=FALSE}
 library(BiocStyle)
 library(knitr)
-options(digits = 4, width = 80)
+options(digits = 4, width = 80, timeout = 600)
 opts_chunk$set(echo = TRUE, 
                tidy = FALSE, 
                include = TRUE,
