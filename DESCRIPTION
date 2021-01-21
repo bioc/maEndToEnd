@@ -35,7 +35,7 @@ Suggests:
     knitr,
     devtools,
     rmarkdown
-License: MIT + file LICENSE
+License: MIT + file LICENCE
 Encoding: UTF-8
 VignetteBuilder: knitr
 biocViews: GeneExpressionWorkflow 
