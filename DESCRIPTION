@@ -28,13 +28,14 @@ Depends: R (>= 3.5.0),
     matrixStats,
     genefilter,
     openxlsx,
-    Rgraphviz 
+    Rgraphviz,
+    enrichplot
 Suggests: 
     BiocStyle,
     knitr,
     devtools,
     rmarkdown
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 VignetteBuilder: knitr
 biocViews: GeneExpressionWorkflow 
