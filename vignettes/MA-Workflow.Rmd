@@ -229,17 +229,16 @@ files are produced by the array scanner software and contain the measured probe 
 and have the accession code **E-MTAB-2967**.
 
 We will store these files in the directory **raw\_data\_dir** which defaults to 
-a temporary directory.
+a cache location determined by R.  Alternatively, you can provide any location you
+like here.
 
-```{r generateFolderForRawData}
-raw_data_dir <- tempdir()
+```{r generateFolderForRawData, eval = TRUE}
+raw_data_dir <- tools::R_user_dir(package = "maEndToEnd", which = "cache")
 
 if (!dir.exists(raw_data_dir)) {
     dir.create(raw_data_dir)
 }
-
 ```
-
 
 Each ArrayExpress data set has a landing page summarizing the data set, 
 and we use the `getAE`function from the `r Biocpkg("ArrayExpress") ` Bioconductor package to obtain 
