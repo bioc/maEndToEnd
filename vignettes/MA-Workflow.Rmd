@@ -117,50 +117,19 @@ This is a typical clinical data set consisting of 58 arrays in total.
 Our aim is to analyze differential expression (DE) between the tissues. 
 Our results show a substantial overlap with the results of the original paper.
 
-# Workflow package installation
+# Workflow package installation from Bioconductor
 
-The workflow is wrapped in a package called `maEndToEnd`. 
-
-The `maEndToEnd` package can currently be obtained from GitHub and is 
-available via the current development version of Bioconductor (3.8) (see here: <http://bioconductor.org/packages/devel/workflows/html/maEndToEnd.html>).
-
-## Workflow package installation from Bioconductor
-
+The workflow is wrapped in a package called `maEndToEnd`.  
 You can install the package via the `r CRANpkg("BiocManager")`.
 
 ```{r installBioc, eval=FALSE}
 if (!require("BiocManager"))
     install.packages("BiocManager")
-BiocManager::install("maEndToEnd", version = "devel")
+BiocManager::install("maEndToEnd")
 ```
 
-Currently, the workflow is available in the development version of Bioconductor
-(3.8), which will become the release version in October 2018.
-
-For details on how to use this version of Bioconductor see:
-
-<http://bioconductor.org/developers/how-to/useDevel/>
-
-## Workflow package installation from Github
-
-```{r, echo=TRUE, results="hide", warning=FALSE, eval=FALSE}
-
-#In order to download the package from GitHub, we need the "install_github" 
-#function from the "remotes" package. We download the latest developer 
-#version of "remotes" from GitHub with the devtool::install_github
-#function; note that this is necessary as the current "remotes" version on
-#CRAN doesn't allow us to correctly download the "maEndToEnd" package: 
-
-install.packages("devtools")
-library(devtools)
-
-devtools::install_github("r-lib/remotes")
-library(remotes)
-packageVersion("remotes") # has to be 1.1.1.9000 or later
-
-remotes::install_github("b-klaus/maEndToEnd", ref="master")
-
-```
+Currently, the workflow has been available since Bioconductor version 3.8, 
+which was first released in October 2018.
 
 ## Workflow package import
 
