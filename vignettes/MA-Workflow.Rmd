@@ -222,7 +222,7 @@ created above. The names of the downloaded files are returned as a list.
 
 ```{r getDataEBI, eval=TRUE, results='hide', message=FALSE}
 anno_AE <- getAE("E-MTAB-2967", path = raw_data_dir, type = "raw")
-download.file(url = "https://ftp.ebi.ac.uk/biostudies/nfs/E-MTAB-/967/E-MTAB-2967/Files/E-MTAB-2967.sdrf.txt",
+download.file(url = "https://www.ebi.ac.uk/biostudies/files/E-MTAB-2967/E-MTAB-2967.sdrf.txt",
               destfile = file.path(raw_data_dir, "E-MTAB-2967.sdrf.txt"), 
               mode = "wb")
 ```
